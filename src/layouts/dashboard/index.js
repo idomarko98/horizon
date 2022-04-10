@@ -29,10 +29,6 @@ import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatist
 // Data
 import dashboardData from "layouts/dashboard/data/dashboardData";
 
-// Dashboard components
-import Projects from "layouts/dashboard/components/Projects";
-import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
-
 function Dashboard() {
   const { programmers, softwareTesters, livingSoon, wantToTransfer } =
     dashboardData;
@@ -128,16 +124,6 @@ function Dashboard() {
                   chart={wantToTransfer}
                 />
               </MDBox>
-            </Grid>
-          </Grid>
-        </MDBox>
-        <MDBox>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={8}>
-              <Projects />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <OrdersOverview />
             </Grid>
           </Grid>
         </MDBox>
