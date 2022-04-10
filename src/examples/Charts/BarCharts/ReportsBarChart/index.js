@@ -58,7 +58,12 @@ function ReportsBarChart({ color, title, description, chart }) {
           <MDTypography variant="h6" textTransform="capitalize">
             {title}
           </MDTypography>
-          <MDTypography component="div" variant="button" color="text" fontWeight="light">
+          <MDTypography
+            component="div"
+            variant="button"
+            color="text"
+            fontWeight="light"
+          >
             {description}
           </MDTypography>
         </MDBox>
@@ -75,10 +80,20 @@ ReportsBarChart.defaultProps = {
 
 // Typechecking props for the ReportsBarChart
 ReportsBarChart.propTypes = {
-  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+  color: PropTypes.oneOf([
+    "primary",
+    "secondary",
+    "info",
+    "success",
+    "warning",
+    "error",
+    "dark",
+  ]),
   title: PropTypes.string.isRequired,
   description: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  chart: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.array, PropTypes.object])).isRequired,
+  chart: PropTypes.objectOf(
+    PropTypes.oneOfType([PropTypes.array, PropTypes.object])
+  ).isRequired,
 };
 
 export default ReportsBarChart;

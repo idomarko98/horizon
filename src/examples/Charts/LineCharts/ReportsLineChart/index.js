@@ -59,13 +59,22 @@ function ReportsLineChart({ color, title, description, date, chart }) {
           <MDTypography variant="h6" textTransform="capitalize">
             {title}
           </MDTypography>
-          <MDTypography component="div" variant="button" color="text" fontWeight="light">
+          <MDTypography
+            component="div"
+            variant="button"
+            color="text"
+            fontWeight="light"
+          >
             {description}
           </MDTypography>
           <Divider />
           <MDBox display="flex" alignItems="center">
-            <MDTypography variant="button" color="text" lineHeight={1} sx={{ mt: 0.15, mr: 0.5 }}>
-            </MDTypography>
+            <MDTypography
+              variant="button"
+              color="text"
+              lineHeight={1}
+              sx={{ mt: 0.15, mr: 0.5 }}
+            ></MDTypography>
             <MDTypography variant="button" color="text" fontWeight="light">
               {date}
             </MDTypography>
@@ -84,11 +93,21 @@ ReportsLineChart.defaultProps = {
 
 // Typechecking props for the ReportsLineChart
 ReportsLineChart.propTypes = {
-  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
+  color: PropTypes.oneOf([
+    "primary",
+    "secondary",
+    "info",
+    "success",
+    "warning",
+    "error",
+    "dark",
+  ]),
   title: PropTypes.string.isRequired,
   description: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   date: PropTypes.string.isRequired,
-  chart: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.array, PropTypes.object])).isRequired,
+  chart: PropTypes.objectOf(
+    PropTypes.oneOfType([PropTypes.array, PropTypes.object])
+  ).isRequired,
 };
 
 export default ReportsLineChart;

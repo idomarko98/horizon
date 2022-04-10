@@ -27,10 +27,11 @@ import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
 
 // Data
-import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
+import dashboardData from "layouts/dashboard/data/dashboardData";
 
 function Dashboard() {
-  const { programmers, softwareTesters, livingSoon, wantToTransfer } = reportsLineChartData;
+  const { programmers, softwareTesters, livingSoon, wantToTransfer } =
+    dashboardData;
 
   return (
     <DashboardLayout>
