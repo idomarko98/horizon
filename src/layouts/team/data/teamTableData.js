@@ -41,7 +41,12 @@ export default function data() {
 
   const Job = ({ title, description }) => (
     <MDBox lineHeight={1} textAlign="left">
-      <MDTypography display="block" variant="caption" color="text" fontWeight="medium">
+      <MDTypography
+        display="block"
+        variant="caption"
+        color="text"
+        fontWeight="medium"
+      >
         {title}
       </MDTypography>
       <MDTypography variant="caption">{description}</MDTypography>
@@ -62,30 +67,65 @@ export default function data() {
 
     rows: [
       {
-        name: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
+        name: (
+          <Author
+            image={team2}
+            name="John Michael"
+            email="john@creative-tim.com"
+          />
+        ),
         function: <Job title="Tester" description="Trainee" />,
         team_time: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             1 month
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
+            <MDBadge
+              badgeContent="online"
+              color="success"
+              variant="gradient"
+              size="sm"
+            />
           </MDBox>
         ),
         ttl: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             5 years
           </MDTypography>
         ),
         move: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             No
           </MDTypography>
         ),
         special: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             -
           </MDTypography>
         ),
@@ -99,27 +139,56 @@ export default function data() {
         name: <Author image={team3} name="Yossi" email="yossi@gmail.com" />,
         function: <Job title="Fromer CEO" description="" />,
         team_time: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             60 years
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+            <MDBadge
+              badgeContent="offline"
+              color="dark"
+              variant="gradient"
+              size="sm"
+            />
           </MDBox>
         ),
         ttl: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             -10 months
           </MDTypography>
         ),
         move: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             Yes
           </MDTypography>
         ),
         special: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             Chess
           </MDTypography>
         ),
@@ -128,27 +197,56 @@ export default function data() {
         name: <Author image={team4} name="David" email="david@hamelech.com" />,
         function: <Job title="Team leader" description="Senior" />,
         team_time: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             3 years
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="warning" color="error" variant="gradient" size="sm" />
+            <MDBadge
+              badgeContent="warning"
+              color="error"
+              variant="gradient"
+              size="sm"
+            />
           </MDBox>
         ),
         ttl: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             4 months
           </MDTypography>
         ),
         move: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             Yes
           </MDTypography>
         ),
         special: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             React, Kafka
           </MDTypography>
         ),
@@ -157,27 +255,56 @@ export default function data() {
         name: <Author image={team4} name="Ido" email="ido@gestures.com" />,
         function: <Job title="Programmer" description="Junior" />,
         team_time: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             1.5 years
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
+            <MDBadge
+              badgeContent="online"
+              color="success"
+              variant="gradient"
+              size="sm"
+            />
           </MDBox>
         ),
         ttl: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             1 year
           </MDTypography>
         ),
         move: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             Yes
           </MDTypography>
         ),
         special: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography
+            component="a"
+            href="#"
+            variant="caption"
+            color="text"
+            fontWeight="medium"
+          >
             -
           </MDTypography>
         ),

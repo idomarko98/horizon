@@ -1,9 +1,7 @@
 export default {
   programmers: {
     labels: ["team1", "team2", "team3"],
-    datasets: [
-      { label: "total", data: [1, 2, 3] },
-    ],
+    datasets: { label: "programmers", data: [1, 2, 3] },
   },
   softwareTesters: {
     labels: ["team1", "team2", "team3"],
