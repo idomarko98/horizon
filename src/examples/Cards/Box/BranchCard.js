@@ -45,7 +45,12 @@ function BranchCard({ color, title, description, percentage, icon, href }) {
       </MDBox>
       <Divider />
       <MDBox pb={2} px={2}>
-        <MDTypography component="p" variant="button" color="text" display="flex">
+        <MDTypography
+          component="p"
+          variant="button"
+          color="text"
+          display="flex"
+        >
           <MDTypography
             component="span"
             variant="button"
@@ -84,7 +89,8 @@ BranchCard.propTypes = {
     "dark",
   ]),
   title: PropTypes.string.isRequired,
-  description: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
   percentage: PropTypes.shape({
     color: PropTypes.oneOf([
       "primary",
