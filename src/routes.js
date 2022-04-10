@@ -1,6 +1,7 @@
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
-import Tables from "layouts/tables";
+// import Tables from "layouts/tables";
+import Team from "layouts/team";
 import Notifications from "layouts/notifications";
 
 // @mui icons
@@ -15,13 +16,21 @@ const routes = [
     route: "/dashboard",
     component: <Dashboard />,
   },
+  // {
+  //   type: "collapse",
+  //   name: "Tables",
+  //   key: "tables",
+  //   icon: <Icon fontSize="small">table_view</Icon>,
+  //   route: "/tables",
+  //   component: <Tables />,
+  // },
   {
-    type: "collapse",
-    name: "Tables",
-    key: "tables",
+    type: "",
+    name: "Team",
+    key: "team",
     icon: <Icon fontSize="small">table_view</Icon>,
-    route: "/tables",
-    component: <Tables />,
+    route: "/team",
+    component: <Team />,
   },
   {
     type: "collapse",
