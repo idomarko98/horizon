@@ -24,7 +24,6 @@ import { Line } from "react-chartjs-2";
 // @mui material components
 import Card from "@mui/material/Card";
 import Divider from "@mui/material/Divider";
-import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -66,7 +65,6 @@ function ReportsLineChart({ color, title, description, date, chart }) {
           <Divider />
           <MDBox display="flex" alignItems="center">
             <MDTypography variant="button" color="text" lineHeight={1} sx={{ mt: 0.15, mr: 0.5 }}>
-              <Icon>schedule</Icon>
             </MDTypography>
             <MDTypography variant="button" color="text" fontWeight="light">
               {date}
