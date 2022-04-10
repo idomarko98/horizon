@@ -55,7 +55,7 @@ export default function data() {
       { Header: "time in team", accessor: "team_time", align: "left" },
       { Header: "status", accessor: "status", align: "center" },
       { Header: "TTL", accessor: "ttl", align: "center" },
-      { Header: "Wants to move?", accessor: "move", align: "center" },
+      { Header: "Wants to transfer?", accessor: "move", align: "center" },
       { Header: "specialization", accessor: "special", align: "center" },
       // { Header: "action", accessor: "action", align: "center" },
     ],
@@ -63,10 +63,10 @@ export default function data() {
     rows: [
       {
         name: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
-        function: <Job title="Manager" description="Organization" />,
+        function: <Job title="Tester" description="Trainee" />,
         team_time: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            4 years
+            1 month
           </MDTypography>
         ),
         status: (
@@ -76,7 +76,7 @@ export default function data() {
         ),
         ttl: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            2 months
+            5 years
           </MDTypography>
         ),
         move: (
@@ -86,7 +86,7 @@ export default function data() {
         ),
         special: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            React, Kafka
+            -
           </MDTypography>
         ),
         // action: (
@@ -126,7 +126,7 @@ export default function data() {
       },
       {
         name: <Author image={team4} name="David" email="david@hamelech.com" />,
-        function: <Job title="Team leader" description="Broken Hand" />,
+        function: <Job title="Team leader" description="Senior" />,
         team_time: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
             3 years
@@ -134,12 +134,12 @@ export default function data() {
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="warning" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         ttl: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0 years
+            4 months
           </MDTypography>
         ),
         move: (
@@ -149,7 +149,7 @@ export default function data() {
         ),
         special: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Handsome
+            React, Kafka
           </MDTypography>
         ),
       },

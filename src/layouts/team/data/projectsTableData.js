@@ -27,13 +27,9 @@ import MDProgress from "components/MDProgress";
 // Images
 import LogoAsana from "assets/images/small-logos/logo-asana.svg";
 import logoGithub from "assets/images/small-logos/github.svg";
-import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
-// import logoSlack from "assets/images/small-logos/logo-slack.svg";
-// import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoHambruger from "assets/images/small-logos/icon-hambruger.png";
 import logoDb from "assets/images/small-logos/db1.png";
-import passover from "assets/images/small-logos/passover.png";
-// import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import logoPassover from "assets/images/small-logos/passover.png";
 
 export default function data() {
   const Project = ({ image, name }) => (
@@ -105,7 +101,7 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoAtlassian} name="Clean for Passover" />,
+        project: <Project image={logoPassover} name="Clean for Passover" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $3,400

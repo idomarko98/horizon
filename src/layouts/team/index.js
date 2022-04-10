@@ -28,11 +28,15 @@ import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
+// import authorsTableData from "layouts/tables/data/authorsTableData";
+import teamTableData from "layouts/team/data/teamTableData";
+import projectsTableData from "layouts/team/data/projectsTableData";
 
 function Team() {
-  const { columns, rows } = authorsTableData();
+  // const { columns, rows } = authorsTableData();
+  // const { columns: teamColumns, rows: teamRows } = teamTableData();
+  const { columns, rows } = teamTableData();
+
   const { columns: pColumns, rows: pRows } = projectsTableData();
 
   return (
@@ -80,7 +84,7 @@ function Team() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Projects Table
+                  Missions Table
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>
