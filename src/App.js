@@ -173,6 +173,12 @@ export default function App() {
       <Routes>
         {getRoutes(routes)}
         <Route path="*" element={<Navigate to="/dashboard" />} />
+        <Route
+          exact
+          path="/team"
+          element={<Navigate to="/team" />}
+          key="team"
+        />
       </Routes>
     </ThemeProvider>
   );

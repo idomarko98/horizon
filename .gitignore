@@ -25,6 +25,7 @@ package-lock.json
 yarn.lock
 
 commit.sh
+.idea
 
 .prettierignore
 .prettierrc.json

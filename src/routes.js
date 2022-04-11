@@ -6,6 +6,8 @@ import Notifications from "layouts/notifications";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
+import Branches from "./layouts/Branches";
+import Teams from "./layouts/teams";
 
 const routes = [
   {
@@ -16,19 +18,23 @@ const routes = [
     route: "/dashboard",
     component: <Dashboard />,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Tables",
-  //   key: "tables",
-  //   icon: <Icon fontSize="small">table_view</Icon>,
-  //   route: "/tables",
-  //   component: <Tables />,
-  // },
   {
-    type: "",
-    name: "Team",
-    key: "team",
+    type: "collapse",
+    name: "Branches",
+    key: "branches",
     icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/branches",
+    component: <Branches />,
+  },
+  {
+    type: "collapse",
+    name: "Teams",
+    key: "teams",
+    icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/teams",
+    component: <Teams />,
+  },
+  {
     route: "/team",
     component: <Team />,
   },

@@ -1,0 +1,60 @@
+export default {
+  branches: [
+    {
+      id: 1,
+      name: "Branch 1",
+      numberOfPeople: 120,
+      color: "success",
+      description: "סתם ענף.",
+    },
+    {
+      id: 2,
+      name: "Branch 2",
+      numberOfPeople: 120,
+      color: "error",
+      description: "סתם ענף",
+    },
+    {
+      id: 3,
+      name: "Branch 3",
+      numberOfPeople: 120,
+      color: "info",
+      description: "סתם ענף",
+    },
+    {
+      id: 4,
+      name: "Branch 4",
+      numberOfPeople: 120,
+      color: "warning",
+      description: "סתם ענף",
+    },
+    {
+      id: 5,
+      name: "Branch 5",
+      numberOfPeople: 120,
+      color: "primary",
+      description: "סתם ענף",
+    },
+    {
+      id: 6,
+      name: "Branch 6",
+      numberOfPeople: 120,
+      color: "dark",
+      description: "סתם ענף",
+    },
+    {
+      id: 7,
+      name: "Branch 7",
+      numberOfPeople: 120,
+      color: "primary",
+      description: "סתם ענף",
+    },
+    {
+      id: 8,
+      name: "Branch 8",
+      numberOfPeople: 10,
+      color: "primary",
+      description: "סתם ענף",
+    },
+  ],
+};
