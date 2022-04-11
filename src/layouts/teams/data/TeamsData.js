@@ -32,7 +32,7 @@ export default {
       name: "team5",
       numberOfPeople: 6,
       color: "primary",
-      description: "KKK",
+      description: "עוגות ועוגיות",
       branch: 3,
     },
   ],
